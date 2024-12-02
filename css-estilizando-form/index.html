@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estabelizando formularios</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        <h2>estilizando formularios</h2>
+        <form>
+            <!--Detalhes do contato-->
+            <fieldset>
+                <legend>Detalhes de contato</legend>
+                
+                <div>
+                    <label for="nome">Nome:</label> <!--para conectar o label e o input devem ter os mesmos id's-->
+                    <input type="text" name="nome" id="nome">
+                    <!--pode colocar a tag label fechando no final para encaixar também!!-->
+                </div>
+
+                <div>
+                    <label for="email">Email:</label> <!--para conectar o label e o input devem ter os mesmos id's-->
+                    <input type="text" name="nome" id="email">
+                    <!--pode colocar a tag label fechando no final para encaixar também!!-->
+                </div>
+
+                <div>
+                    <label for="url">URL:</label> <!--para conectar o label e o input devem ter os mesmos id's-->
+                    <input type="text" name="nome" id="url">
+                    <!--pode colocar a tag label fechando no final para encaixar também!!-->
+                </div>
+
+            </fieldset>
+            <!--comentarios-->
+            <fieldset>
+                <legend>Comentários</legend>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="texto" id="mensagem"></textarea>
+                </div>
+            </fieldset>
+            <!--Lembrar de mim!-->
+            <fieldset>
+                <legend>Lembrar de mim</legend>
+                <div>
+
+                <!--Lembrar "sim"-->    
+                    <label>
+                        <input class="radio" type="radio" name="Lembrar" id="não">Sim
+                    </label>
+                </div>
+                <!--Lembrar "não"-->
+                <div>
+                    <label>
+                        <input class="radio" type="radio" name="Lembrar" id="sim">Não
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,47 @@
+/**************************/
+/*Herança e especificidade*/
+
+/*Herença*/
+* {
+    border: 1px solid white;/*herda e todos os elementos por causa do seletor universal*/
+}
+
+
+body {
+    color: red;
+    border: 1px solid white; /*não herda em todos os elementos*/
+    background: gray; /*não herda em todos os elementos*/
+}
+
+
+
+
+
+/*Seletores iguais, exceção important*/
+p {
+    color: blue !important;
+}
+
+p {
+    color: red;
+}
+
+/*Se um seletor for mais especifico que outro 
+a regra mai especifica será aplicada 
+(terá precedencia sobre as regras mais gerais).
+*/
+* {/*4°*/
+    color: red;
+}
+
+h2 {/*3°*/
+    color: blue;
+}
+
+h2.classe {/*2°*/
+    color: green;
+}
+
+h2#id{/*1°*/
+    color: yellow;
+}
